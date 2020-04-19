@@ -8,8 +8,8 @@ from xlwt import Workbook
 from multiprocessing import Pool
 
 
-IN_PATH = "E:\\Python Projects\\Projects\\Auto Register\\data\\origin\\"
-OUT_PATH = "E:\\Python Projects\\Projects\\Auto Register\\data\\registered\\"
+IN_PATH = "D:\\Seans One Drive\\OneDrive\\桌面\\data\\"
+OUT_PATH = "D:\\Seans One Drive\\OneDrive\\桌面\\registered\\"
 default_sheet = "Sheet1"
 HomePage = "https://www.dtdjzx.gov.cn/"
 register_page = "http://swgk.dtdjzx.gov.cn/sanwu_phone/zhuce.do"
