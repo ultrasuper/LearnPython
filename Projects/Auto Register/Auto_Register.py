@@ -24,8 +24,8 @@ def get_filenames(path):
 def register(my_name, my_id):
 	try:
 		options = Options()
-		# options.add_argument("--headless")
-		# options.add_argument("--disable-gpu")
+		options.add_argument("--headless")
+		options.add_argument("--disable-gpu")
 		driver = webdriver.Chrome(options=options)
 		driver.get(register_page)
 		# print("打开浏览器")
@@ -85,6 +85,7 @@ def handle_a_sheet(file_name):
 			name = work_sheet.cell_value(row_index, 0)
 			identity = work_sheet.cell_value(row_index, 1)
 			p.apply_async(register, args=(name, identity,))
+			time.sleep(10)
 
 			# result = register(name, identity)
 			# result = 1
