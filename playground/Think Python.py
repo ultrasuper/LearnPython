@@ -49,6 +49,7 @@
 # 	return counter
 
 def createCounter():
+	# L[0] 相当于C语言里的指针
 	L = [0]
 	def counter():
 		L[0] += 1
