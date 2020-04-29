@@ -7,11 +7,11 @@ def metric(fn):
 	def wrapper(*args, **kw):
 		print("begin call")
 		start = time.time()
-		ret = fn(*args, **kw)
+		# ret = fn(*args, **kw)
 		end = time.time()
 		print("end call")
-		print("%s execute in %s ms"%(fn.__name__, end-start))
-		return ret
+		print("%s execute in %s ms"%(wrapper.__name__, end-start))
+		return fn(*args, **kw)
 	return wrapper
 
 @metric
